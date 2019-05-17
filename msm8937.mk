@@ -364,8 +364,13 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.msm8937
 
+ifeq ($(TARGET_KERNEL_VERSION), 4.9)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine-4.9.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+else
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+endif
 
 # USB
 PRODUCT_PACKAGES += \
