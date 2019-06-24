@@ -164,10 +164,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl
 
-# Display calibration
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
