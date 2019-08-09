@@ -289,10 +289,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebtc
-    
-# Xiaomi Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # QMI
 PRODUCT_PACKAGES += \
