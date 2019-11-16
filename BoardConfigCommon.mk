@@ -28,6 +28,8 @@ BOARD_MKBOOTIMG_ARGS 		:= --ramdisk_offset 0x01000000 --second_offset 0x00f00000
 TARGET_COMPILE_WITH_MSM_KERNEL	:= true
 TARGET_KERNEL_SOURCE 		:= kernel/xiaomi/msm8937
 TARGET_EXFAT_DRIVER		:= sdfat
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := 9.0.6
 
 # Architecture
 TARGET_ARCH 	    	:= arm64
